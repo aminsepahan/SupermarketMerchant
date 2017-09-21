@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+
+        <item name="android:windowSharedElementEnterTransition">@transition/changebounds</item>
+        <item name="android:windowSharedElementExitTransition">@transition/changebounds</item>
+        <!-- specify shared element transitions -->
+        <!--<item name="android:windowSharedElementEnterTransition">-->
+            <!--@transition/change_image_transform</item>-->
+        <!--<item name="android:windowSharedElementExitTransition">-->
+            <!--@transition/change_image_transform</item>-->
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_default</item>
+    </style>
+
+    <style name="CircularProgressWhite" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/white</item>
+        <item name="cpd_strokeSize">2dp</item>
+    </style>
+
+    <style name="CircularProgressAccent" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorAccent</item>
+        <item name="cpd_strokeSize">2dp</item>
+    </style>
+
+    <style name="CircularProgressDark" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorPrimaryDark</item>
+        <item name="cpd_strokeSize">2dp</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+
+    <style name="formTitleTextStyle" parent="AppTheme">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/signup_et_ts</item>
+    </style>
+
+    <style name="formSpinnerArrow" parent="AppTheme">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_spinner_arrow</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">520dp</item>
+    </style>
+
+</resources>

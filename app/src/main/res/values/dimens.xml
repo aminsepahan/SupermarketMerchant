@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="item_food_h">310dp</dimen>
+    <dimen name="item_food_h_image">220dp</dimen>
+    <dimen name="item_food_margin">15dp</dimen>
+    <dimen name="item_title_ts_huge">19dp</dimen>
+    <dimen name="item_title_ts_larger">16dp</dimen>
+    <dimen name="item_title_ts_medium">13dp</dimen>
+    <dimen name="item_title_ts_smaller">11dp</dimen>
+    <dimen name="item_cart_image_h">70dp</dimen>
+    <dimen name="item_cart_image_w">70dp</dimen>
+    <dimen name="item_cart_h">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="nav_header_text_margin_left">16dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+    <dimen name="message_text_ts">17sp</dimen>
+    <dimen name="signup_et_p">25dp</dimen>
+    <dimen name="signup_et_ts">16sp</dimen>
+    <dimen name="shipping_methods_m">20dp</dimen>
+    <dimen name="toolbar_product_ts">14sp</dimen>
+    <dimen name="item_title_ts">13dp</dimen>
+    <dimen name="shipping_title_ml">60dp</dimen>
+    <dimen name="item_list_margin">4dp</dimen>
+
+    //Pooya
+    <dimen name="pad_1dp">1dp</dimen>
+    <dimen name="pad_3dp">3dp</dimen>
+    <dimen name="pad_4dp">4dp</dimen>
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_8dp">8dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_16dp">16dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+
+</resources>

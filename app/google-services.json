@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "356638363986",
+    "firebase_url": "https://supermarket-merchant.firebaseio.com",
+    "project_id": "supermarket-merchant",
+    "storage_bucket": "supermarket-merchant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356638363986:android:6a9494be87d186bc",
+        "android_client_info": {
+          "package_name": "com.supermarket.merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356638363986-ljcu5hqtluufktcugntrhc9bdv5f2h36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYGhsKFLfDFSzKI8GSOsQY515fGzWQL_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

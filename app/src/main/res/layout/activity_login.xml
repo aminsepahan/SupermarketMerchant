@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mobileLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mobileTitle"
+                        style="@style/formTitleTextStyle"
+                        android:text="@string/mobile" />
+
+                    <EditText
+                        android:id="@+id/mobileEt"
+                        style="@style/spinnerTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_spinner_back"
+                        android:gravity="left"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:tag="bold"
+                        android:text="09"
+                        android:textDirection="ltr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verificationCodeLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/verificationCodeTitle"
+                        style="@style/formTitleTextStyle"
+                        android:text="@string/enter_verification_code" />
+
+                    <EditText
+                        android:id="@+id/verificationCodeEt"
+                        style="@style/spinnerTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_spinner_back"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:tag="bold"
+                        android:text=""
+                        android:textDirection="ltr" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/saveBtnLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/saveBtnOff"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="1dp"
+                            android:padding="18dp"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:stateListAnimator="@null"
+                            android:tag="bold"
+                            android:text="@string/send"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            app:backgroundTint="@color/gray" />
+
+                        <android.support.v7.widget.AppCompatButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/saveBtn"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0"
+                            android:elevation="1dp"
+                            android:padding="18dp"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:stateListAnimator="@null"
+                            android:tag="bold"
+                            android:text="@string/send"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            app:backgroundTint="@color/colorAccent" />
+
+                        <com.rey.material.widget.ProgressView
+                            android:id="@+id/progress"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/saveBtn"
+                            android:layout_alignTop="@+id/saveBtn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10dp"
+                            android:translationZ="10dp"
+                            app:pv_autostart="false"
+                            app:pv_circular="true"
+                            app:pv_progressMode="indeterminate"
+                            app:pv_progressStyle="@style/CircularProgressWhite" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sendCodeAgainLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/sendCodeAgainBtnOff"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="1dp"
+                            android:padding="18dp"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:stateListAnimator="@null"
+                            android:tag="bold"
+                            android:text="@string/send_again"
+                            android:textColor="@color/gray"
+                            android:textSize="13dp"
+                            app:backgroundTint="@color/white" />
+
+                        <android.support.v7.widget.AppCompatButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/sendCodeAgainBtn"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0"
+                            android:elevation="1dp"
+                            android:padding="18dp"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:stateListAnimator="@null"
+                            android:tag="bold"
+                            android:text="@string/send_again"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            app:backgroundTint="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+</RelativeLayout>
